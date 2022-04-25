@@ -17,10 +17,10 @@ fun main() {
 
     /* INTEGER TYPES */
     // Byte (8 bits); Short (16 bits); Int (32 bits); Long (64 bits)
-    var myByte: Byte = 23
-    var myShort: Short = 29999
-    var myInt: Int = 1999999999
-    var myLong: Long = 8_99999_999_999_999999_9 // underscore use to separate number blocks
+    var myByte: Byte = 127
+    var myShort: Short = 32767
+    var myInt: Int = 2147483647
+    var myLong: Long = 9_223_372_036_854_775_807 // underscore use to separate number blocks
 
 
 
@@ -41,11 +41,12 @@ fun main() {
 
 
     /* Strings */
-    var myString: String = "Hello World!"
+    val myString: String = "Hello World!"
     var firstCharacter: Char = myString[0]
     var lastCharacter: Char = myString[myString.length - 1]
     println("")
     println("First character is \"" + firstCharacter + "\"")
-    println("The last character is: " + lastCharacter)
+    println("The last character is: $lastCharacter")
+    println("$myString.length is ${myString.length}")
 
 }
