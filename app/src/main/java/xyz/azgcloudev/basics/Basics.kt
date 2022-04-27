@@ -49,4 +49,18 @@ fun main() {
     println("The last character is: $lastCharacter")
     println("$myString.length is ${myString.length}")
 
+
+    /* Arirthmetic operators
+        + - * / %
+    * */
+    var sumResult: Long = 5 + 2
+    var division: Double = sumResult / 2.0
+    println(division)
+    var multi: Long = sumResult * sumResult
+    println(multi)
+    println(division % 2)
+
+
+    /* Comparison Operators */
+    
 }
